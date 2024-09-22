@@ -2,11 +2,11 @@
   "name": "niounkidtech-lms",
   "version": "1.0.0",
   "description": "A Learning Management System for NiounKidTech.",
-  "main": "src/index.js",
+  "main": "back-end/src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
-    "test": "jest"
+    "start": "node back-end/src/index.js",
+    "build-client": "cd ../front_end && npm install && npm run build",
+    "start-client": "cd ../front_end && npm start"
   },
   "author": "",
   "license": "ISC",
