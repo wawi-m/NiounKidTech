@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const cors = require('cors');
@@ -32,6 +33,9 @@ mongoose.connect(uri, {
 })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('MongoDB connection error:', err));
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Use the routes
 app.use('/auth', authRoutes);  // Use the new routes for signup/login
