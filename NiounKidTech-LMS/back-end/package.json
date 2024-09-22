@@ -18,7 +18,8 @@
     "express": "^4.19.2",
     "mongodb": "^6.9.0",
     "mongoose": "^6.13.2",
-    "passport": "^0.7.0"
+    "passport": "^0.7.0",
+    "react-scripts": "^3.0.1"
   },
   "devDependencies": {
     "jest": "^29.7.0",
