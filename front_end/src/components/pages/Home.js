@@ -13,7 +13,7 @@ function Home() {
           <p>Our interactive learning platform helps kids master coding through fun lessons, projects, and quizzes.</p>
           <Link to="/signup" className="cta-button">Get Started</Link>
         </div>
-        <img src="/front_end/public/Kidscode.png" alt="Coding Kids" className="hero-image" />
+        <img src="/Kidscode.png" alt="Coding Kids" className="hero-image" />
       </section>
 
       {/* Features Section */}
@@ -21,22 +21,22 @@ function Home() {
         <h2>Why NiounKidTech?</h2>
         <div className="features-wrapper">
           <div className="feature-box">
-            <img src="/front_end/src/components/pages/Capture.PNG" alt="Interactive" />
+            <img src="/Capture.PNG" alt="Interactive" />
             <h3>Interactive Lessons</h3>
             <p>Engaging lessons with interactive coding challenges for young minds.</p>
           </div>
           <div className="feature-box">
-            <img src="/front_end/src/components/pages/Progresstracking.png" alt="Progress Tracking" />
+            <img src="/Progresstracking.png" alt="Progress Tracking" />
             <h3>Progress Tracking</h3>
             <p>Track the learning progress of your child with personalized dashboards.</p>
           </div>
           <div className="feature-box">
-            <img src="/front_end/src/components/pages/Certificate.png" alt="Certifications" />
+            <img src="/Certificate.png" alt="Certifications" />
             <h3>Certifications</h3>
             <p>Kids earn cool certificates to celebrate their milestones.</p>
           </div>
           <div className="feature-box">
-            <img src="/front_end/src/components/pages/Quiz.png" alt="Quizzes" />
+            <img src="/Quiz.png" alt="Quizzes" />
             <h3>Fun Quizzes</h3>
             <p>Regular quizzes ensure that learning is both effective and enjoyable.</p>
           </div>
@@ -49,15 +49,15 @@ function Home() {
         <p>Unlock badges, complete missions, and challenge friends while learning to code.</p>
         <div className="badges-container">
           <div className="badge-item">
-            <img src="/front_end/src/components/pages/badge1.png" alt="Coding Ninja" />
+            <img src="/badge1.png" alt="Coding Ninja" />
             <h4>Coding Ninja</h4>
           </div>
           <div className="badge-item">
-            <img src="/front_end/src/components/pages/badge2.png" alt="JavaScript Master" />
+            <img src="/badge2.png" alt="JavaScript Master" />
             <h4>JavaScript Master</h4>
           </div>
           <div className="badge-item">
-            <img src="/front_end/src/components/pages/badge3.png" alt="Quiz Champion" />
+            <img src="/badge3.png" alt="Quiz Champion" />
             <h4>Quiz Champion</h4>
           </div>
         </div>
