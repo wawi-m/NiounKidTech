@@ -1,0 +1,19 @@
+.contact-section {
+    font-size: 16px; /* Base font size */
+}
+
+.contact-section a {
+    color: #333; /* Link color */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.contact-section a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+.contact-section a i {
+    margin-right: 5px; /* Space between icon and text */
+    color: inherit; /* Use the same color as the link */
+}
