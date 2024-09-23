@@ -35,7 +35,7 @@ mongoose.connect(uri, {
     .catch(err => console.log('MongoDB connection error:', err));
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, '../front_end/build')));
 
 // Use the routes
 app.use('/auth', authRoutes);  // Use the new routes for signup/login
