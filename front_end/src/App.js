@@ -6,6 +6,8 @@ import Login from './components/pages/Login';
 import Teach from './components/pages/Teach';
 import Learn from './components/pages/Learn';
 import Home from './components/pages/Home'; // Ensure you use Home if needed
+import Contact from './components/pages/Contact';
+import About from './components/pages/About';
 
 function App() {
   return (
