@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "build-client": "cd ../front_end && npm install && npm run build",
-    "start-client": "cd ../front_end && npm start"
+    "dev": "nodemon src/index.js",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
