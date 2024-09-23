@@ -8,12 +8,16 @@ const authRoutes = require('./routes/auth');  // Use new auth routes
 const coursesRoute = require('./routes/courses'); // Your previous routes
 const userRoutes = require('./routes/userRoutes');
 const checkRole = require('./routes/checkRole');
+const Model = require('./models/User'); // Adjust the path as needed
 
 const app = express();
 
 // Middleware to parse JSON requests
 app.use(cors()); 
 app.use(express.json());
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, '../front_end/build')));
 
 // Connect to MongoDB
 mongoose.set('strictQuery', true);
@@ -33,9 +37,6 @@ mongoose.connect(uri, {
 })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log('MongoDB connection error:', err));
-
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../front_end/build')));
 
 // Use the routes
 app.use('/auth', authRoutes);  // Use the new routes for signup/login
