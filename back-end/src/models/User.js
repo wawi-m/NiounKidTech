@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   phone: { type: String, required: true },
   address: { type: String, required: true },
   role: { type: String, enum: ['admin', 'teacher', 'student'], required: true },
-  isApproved: { type: Boolean, default: false }
+  isApproved: { type: Boolean, default: true }
 });
 
 module.exports = mongoose.model('User', userSchema);
