@@ -1,39 +1,32 @@
 /* Teach.css */
 
-/* General Page Styles */
+/* Main container for the teach page */
 .teach-page {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url('/Background.png'); /* Ensure Background.png is in the appropriate folder */
+  background-size: cover;
+  background-position: center;
 }
 
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Cover the entire area */
-  z-index: -1; /* Background layer */
-}
-
-/* Popup Message Styling */
+/* Popup message styling */
 .popup {
   position: fixed;
   top: 20px;
   right: 20px;
   padding: 15px;
   border-radius: 5px;
+  margin: 0 auto;
   width: 300px;
   z-index: 1000;
   display: none; /* Initially hidden */
 }
 
 .popup.show {
-  display: block; /* Visible when active */
+  display: block; /* Show when the message is set */
 }
 
 .error {
@@ -48,14 +41,14 @@
   border: 1px solid #c3e6cb;
 }
 
-/* Form Styling */
+/* Form styling */
 h1, h2 {
   text-align: center;
-  margin: 10px 0; /* Consolidated margin */
+  margin: 10px 0;
 }
 
 form {
-  background: rgba(255, 255, 255, 0.85); /* Semi-transparent */
+  background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,7 +61,8 @@ form {
 }
 
 .form-group label {
-  margin-bottom: 5px; /* Removed unnecessary display: block; */
+  display: block;
+  margin-bottom: 5px;
 }
 
 .form-group input {
@@ -79,11 +73,10 @@ form {
   box-sizing: border-box;
 }
 
-/* Button Styles */
 button {
   width: 100%;
   padding: 10px;
-  background-color: #007bff; /* Primary color */
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
@@ -91,13 +84,13 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
 }
 
-/* Link Styles */
+/* Link styling */
 p {
   text-align: center;
-  margin-top: 10px; /* Consistent margin */
+  margin-top: 10px;
 }
 
 .cta-button {
@@ -106,5 +99,5 @@ p {
 }
 
 .cta-button:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }

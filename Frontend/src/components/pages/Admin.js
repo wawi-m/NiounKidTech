@@ -54,7 +54,6 @@ function AdminSignIn() {
 
   return (
     <div className="admin-signin-container">
-    <img src="/Background.png" alt="Background" className="background-image" />
       <div className="admin-signin-form">
         <h2>Admin Sign-In</h2>
         <form onSubmit={handleSubmit}>

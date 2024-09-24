@@ -5,8 +5,8 @@ import './Learn.css';
 function Learn() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(''); // Add error message state
+  const [successMessage, setSuccessMessage] = useState(''); // Add success message state
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,31 +19,29 @@ function Learn() {
         body: JSON.stringify({ username, password }),
       });
       const result = await response.json();
-      console.log('Response status:', response.status);
-      console.log('Result:', result);
+      console.log('Response status:', response.status);  // Log the status code
+      console.log('Result:', result);  // Log the full result
 
       if (response.ok) {
         setSuccessMessage(result.message || 'Login successful! Redirecting...');
+        // Redirect or perform any action after successful login
         setTimeout(() => {
-          window.location.href = '/studashboard';
+          window.location.href = '/studashboard'; // Redirect after 2 seconds
         }, 2000);
       } else {
         setErrorMessage(result.message || 'Login failed. Please try again.');
-        setSuccessMessage('');
+        setSuccessMessage(''); // Clear success message
       }
     } catch (error) {
       setErrorMessage('An error occurred during signup. Please try again.');
-      setSuccessMessage('');
+      setSuccessMessage(''); // Clear success message
     }
   };
 
   return (
     <div className="learn-page">
-      {/* Background Image */}
-      <img src="/Background.png" alt="Background" className="background-image" />
-
-      {/* Popup for error message */}
-      {errorMessage && (
+       {/* Popup for error message */}
+       {errorMessage && (
         <div className="popup error show">
           {errorMessage}
         </div>
