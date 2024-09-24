@@ -10,11 +10,22 @@ const coursesRoute = require('./routes/courses');
 const userRoutes = require('./routes/userRoutes');
 const checkRole = require('./routes/checkRole');
 
+// Import models
+const User = require('./models/User'); // Adjust the path as needed
+
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Example custom middleware
+const requestLogger = (req, res, next) => {
+    console.log(`${req.method} ${req.url}`);
+    next(); // Call the next middleware
+};
+
+app.use(requestLogger); // Use the custom middleware
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, '../front_end/build')));
@@ -39,8 +50,8 @@ mongoose.connect(uri, {
 // Use routes
 app.use('/auth', authRoutes);
 app.use('/courses', coursesRoute);
-app.use('/users', userRoutes); // Add user routes
-app.use('/role', checkRole); // Add check role route
+app.use('/users', userRoutes);
+app.use('/role', checkRole);
 
 // Catch-all route to serve the React app
 app.get('*', (req, res) => {
