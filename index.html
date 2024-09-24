@@ -101,45 +101,37 @@
     function Home() {
       return e('div', { className: 'home-container' },
 
-        <!-- Hero Section -->
-    <header id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1>Welcome to NiounKid-Tech LMS</h1>
-            <p>Empowering the Next Generation of Coders!</p>
-            <p>Our interactive learning platform helps kids master coding through fun lessons, projects, and quizzes.</p>
-            <a href="/signup" class="cta-button">Get Started</a>
-        </div>
-        <img src="/Kidscode.png" alt="Children engaging with coding materials" class="hero-image" />
-    </header>
+        // Hero Section
+        e('section', { className: 'hero' },
+          e('div', { className: 'hero-content' },
+            e('h1', null, 'Welcome to NIOUNKID-TECH LMS'),
+            e('p', null, 'Empowering you to learn and grow with the best educational tools available.'),
+            e('button', { className: 'cta-button' }, 'Get Started')
+          )
+        ),
 
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <h2>Why NiounKidTech?</h2>
-        <div class="features-wrapper">
-            <article class="feature-box">
-                <img src="/Capture.PNG" alt="Children interacting with lessons" />
-                <h3>Interactive Lessons</h3>
-                <p>Engaging lessons with interactive coding challenges for young minds.</p>
-            </article>
-            <article class="feature-box">
-                <img src="/Progresstracking.png" alt="Dashboard displaying progress tracking" />
-                <h3>Progress Tracking</h3>
-                <p>Track the learning progress of your child with personalized dashboards.</p>
-            </article>
-            <article class="feature-box">
-                <img src="/Certificate.png" alt="Certificate awarded for coding achievements" />
-                <h3>Certifications</h3>
-                <p>Kids earn cool certificates to celebrate their milestones.</p>
-            </article>
-            <article class="feature-box">
-                <img src="/Quiz.png" alt="Children taking a quiz" />
-                <h3>Fun Quizzes</h3>
-                <p>Regular quizzes ensure that learning is both effective and enjoyable.</p>
-            </article>
-        </div>
-    </section>
-
-    <script src="script.js"></script> <!-- Link to your JS file -->
+        // Features Section
+        e('section', { className: 'features' },
+          e('h2', null, 'Features'),
+          e('div', { className: 'features-grid' },
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Interactive Courses'),
+              e('p', null, 'Engage with interactive, instructor-led courses designed for all levels.')
+            ),
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Assessments & Quizzes'),
+              e('p', null, 'Test your knowledge with quizzes and receive instant feedback.')
+            ),
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Progress Tracking'),
+              e('p', null, 'Track your learning progress and get insights into your development.')
+            ),
+            e('div', { className: 'feature-item' },
+              e('h3', null, 'Certifications'),
+              e('p', null, 'Earn certificates upon completion to showcase your achievements.')
+            )
+          )
+        ),
 
         // Testimonials Section
         e('section', { className: 'testimonials' },
