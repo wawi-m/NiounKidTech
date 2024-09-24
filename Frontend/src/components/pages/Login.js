@@ -42,6 +42,8 @@ function Login() {
 
   return (
     <div className="login-page">
+     {/* Background Image */}
+      <img src="/LoginBackground.png" alt="Background" className="background-image" />
       {/* Popup for error message */}
       {errorMessage && (
         <div className="popup error show">
