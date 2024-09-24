@@ -1,14 +1,26 @@
 /* Login.css */
 
-/* Apply a background image for the login page */
+/* Apply box-sizing globally */
+* {
+  box-sizing: border-box;
+}
+
 .login-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('./LoginBackground.png'); /* Ensure LoginBackground.png is in the 'public' folder */
-  background-size: cover;
-  background-position: center;
+  position: relative; /* Ensure positioning for absolute elements */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the whole area */
+  z-index: -1; /* Send the image to the back */
 }
 
 .login-container {
