@@ -59,9 +59,7 @@ function AdminDashboard() {
 
   return (
     <div className="admin-dashboard-container">
-     {/* Background Image */}
-      <img src="/Background.png" alt="Background" className="background-image" />
-      <h2>Admin Dashboard</h2>
+         <h2>Admin Dashboard</h2>
       {errorMessage && <p className="error">{errorMessage}</p>}
 
       <div className="pending-section">
