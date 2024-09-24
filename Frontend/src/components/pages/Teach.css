@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('./Background.png'); /* Ensure Background.png is in the appropriate folder */
+  background-image: url('/Background.png'); /* Ensure Background.png is in the appropriate folder */
   background-size: cover;
   background-position: center;
 }
