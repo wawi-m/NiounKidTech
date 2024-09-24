@@ -91,13 +91,13 @@ function Home() {
           <p>Follow us</p>
           <div className="social-icons">
             <a href="https://x.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer">
-              <i iconClass="fa-brands fa-square-x-twitter"></i>
+              <i className="fa-brands fa-square-x-twitter"></i>
             </a>
             <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank" rel="noopener noreferrer">
-              <i iconClass="fa-brands fa-linkedin-in"></i>
+              <i className="fa-brands fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/YourGitHubUsername" target="_blank" rel="noopener noreferrer">
-              <i iconClass="fa-brands fa-square-github"></i>
+              <i className="fa-brands fa-square-github"></i>
             </a>
           </div>
         </div>
