@@ -16,7 +16,7 @@
             font-family: Arial, sans-serif;
         }
         header {
-            background-image: url('Frontend/public/Capture.PNG'); /* Add your cover image path */
+            background-image: url('Frontend/public/LoginBackground.png'); /* Add your cover image path */
             background-size: cover;
             background-position: center;
             padding: 60px 20px;
@@ -76,11 +76,11 @@
                     e('nav', null,
                         e('a', { href: '#features' }, 'Features'),
                         e('a', { href: '#testimonials' }, 'Testimonials'),
-                        e('a', { href: '/deployed-project' }, 'View Project') // Link to the deployed project
+                        e('a', { href: 'https://niounkidtech.onrender.com/', target: '_blank' }, 'View Project') // Link to the deployed project
                     ),
                     e('h1', null, 'Welcome to NIOUNKID-TECH LMS'),
                     e('p', null, 'Empowering you to learn and grow with the best educational tools available.'),
-                    e('button', { className: 'cta-button' }, 'Get Started')
+                    e('a', { href: 'https://niounkidtech.onrender.com/', className: 'cta-button', target: '_blank' }, 'Get Started') // Updated button
                 ),
 
                 // Features Section
