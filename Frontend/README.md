@@ -1,67 +1,70 @@
-NiounKid.tech is a platform dedicated to empowering Nigerian children with coding skills. Our mission is to provide accessible, engaging coding education to children in Nigeria, helping them build a solid foundation in programming and digital literacy.
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
-Team Members and Roles
+In the project directory, you can run:
 
-Nduke Sunday (Front-end Developer): Focused on creating an intuitive and engaging frontend using React to make the platform accessible and fun for kids.
+### `npm start`
 
-Adeniji Adedayo and Grace(Backend Developers): Developed a robust backend with Express.js and MongoDB, ensuring efficient and secure data management.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-Technologies
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Frontend: React
+### `npm run build`
 
-Backend: Express.js and MongoDB
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Purpose and Audience
+### `npm run eject`
 
-NiounKid.tech aims to improve access to coding education for Nigerian children aged 5-18. By offering a localized and engaging platform, we inspire and empower young learners with essential coding skills.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-My Personal Focus
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-As the front-end developer, my goal was to design an intuitive and visually appealing user interface using React. The platform was developed with a responsive design, ensuring that kids can easily navigate and access learning materials.
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Inspiration
+### Code Splitting
 
-The lack of access to quality educational resources in Nigeria inspired this project. NiounKid.tech aims to bridge this gap by providing children with the tools and knowledge to excel in the digital world.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Achievements
+### Making a Progressive Web App
 
-Developed a tailored coding curriculum for Nigerian children.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Built a user-friendly frontend with React and a scalable backend using Express.js and MongoDB.
+### Advanced Configuration
 
-Integrated a CMS like Contentful for easy updates to learning materials.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Deployment
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Technical Challenges
+### `npm run build` fails to minify
 
-Ensuring scalability was a significant challenge. 
-
-
-
-Lessons Learned
-
-Technical Insights: Building a scalable application requires careful planning and a solid understanding of both frontend and backend technologies.
-
-Areas for Improvement: Implementing automated testing earlier would have improved efficiency in catching and fixing bugs.
-
-Personal Growth: The project reinforced the importance of collaboration, clear communication, and being adaptable to new technologies.
-
-
-
-Future Directions
-
-We plan to add more interactive elements, such as coding challenges and gamified experiences. Additionally, we aim to partner with schools and organizations in Nigeria to broaden our reach, ultimately making coding education accessible to every child in Nigeria.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
